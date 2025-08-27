@@ -1,0 +1,12 @@
+apiVersion: apps.kruise.io/v1alpha1
+kind: SidecarSet
+metadata:
+  name: fluentd-sidecar
+spec:
+  selector:
+    matchLabels:
+      app: my-app
+  containers:
+  - name: fluentd-agent
+    image: fluent/fluentd:v1.14
+    command: ["fluentd", "-v"]
