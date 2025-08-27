@@ -55,7 +55,7 @@ The repository is structured as a Terraform project that installs OpenKruise usi
 
 To deploy using OCI Resource Manager, click the button below. This will take you to the OCI console to create a new stack.
 
-[![Deploy to OCI](https://oci-resourcemanager-plugin.plugins.oci.oraclecloud.com/latest/deploy-to-oracle-cloud.svg)](https://cloud.oracle.com/resourcemanager/stacks/create?zioUrl=https://github.com/dranicu/openkruise-on-oke/archive/refs/heads/main.zip)
+[![Deploy to OCI](https://oci-resourcemanager-plugin.plugins.oci.oraclecloud.com/latest/deploy-to-oracle-cloud.svg)](https://cloud.oracle.com/resourcemanager/stacks/create?zipUrl=https://github.com/dranicu/openkruise-on-oke/archive/refs/heads/main.zip)
 
 1.  Click the "Deploy to OCI" button.
 2.  If you are not already logged in, log in to your OCI account.
