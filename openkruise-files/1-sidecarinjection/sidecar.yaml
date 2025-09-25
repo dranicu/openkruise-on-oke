@@ -9,4 +9,10 @@ spec:
   containers:
   - name: fluentd-agent
     image: fluent/fluentd:v1.14
-    command: ["fluentd", "-v"]
+    volumeMounts:
+    - name: config-volume
+      mountPath: /etc/fluent/
+  volumes:
+  - name: config-volume
+    configMap:
+      name: fluentd-config

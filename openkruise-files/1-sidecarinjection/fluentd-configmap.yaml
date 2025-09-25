@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: fluentd-config
+data:
+  fluent.conf: |
+    <source>
+      @type dummy
+      tag "demo.log"
+      dummy {"message": "hello from fluentd sidecar"}
+    </source>
+    <match demo.log>
+      @type stdout
+    </match>
