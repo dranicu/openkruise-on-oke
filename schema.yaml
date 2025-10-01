@@ -20,29 +20,35 @@ variableGroups:
       - user_ocid
       - current_user_ocid
 
-  - title: "IAM Policies"
+  - title: "Hidden stack variables"
+    visible: false
+    variables:
+      - create_iam_resources
+      - create_iam_tag_namespace
+      - create_iam_defined_tags
+      - use_defined_tags
+      - tag_namespace
+      - bastion_allowed_cidrs
+      - bastion_image_os
+      - bastion_image_os_version
+      - bastion_image_type
+      - bastion_image_id
+      - bastion_user
+      - operator_image_os
+      - operator_image_os_version
+      - operator_image_type
+      - operator_image_id
+      - operator_user
+      - control_plane_allowed_cidrs
+      - create_cluster
+      - operator_allowed_cidrs
+      - state_id
+
+  - title: "IAM configuration"
     visible: true
     variables:
       - create_iam_resources
       - create_iam_tag_namespace
-      # - create_iam_defined_tags
-      # - use_defined_tags
-      # - tag_namespace
-      # - bastion_allowed_cidrs
-      # - bastion_image_os
-      # - bastion_image_os_version
-      # - bastion_image_type
-      # - bastion_image_id
-      # - bastion_user
-      # - operator_image_os
-      # - operator_image_os_version
-      # - operator_image_type
-      # - operator_image_id
-      # - operator_user
-      # - control_plane_allowed_cidrs
-      # - create_cluster
-      # - operator_allowed_cidrs
-      # - state_id
 
   - title: "General configuration"
     visible: true
@@ -97,12 +103,12 @@ variables:
   create_iam_resources:
     type: bool
     default: false
-    visible: false
+    visible: true
 
   create_iam_tag_namespace:
     type: bool
     default: false
-    visible: false
+    visible: true
 
   create_iam_defined_tags:
     type: bool
