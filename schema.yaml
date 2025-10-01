@@ -44,12 +44,6 @@ variableGroups:
       - operator_allowed_cidrs
       - state_id
 
-  - title: "IAM configuration"
-    visible: true
-    variables:
-      - create_iam_resources
-      - create_iam_tag_namespace
-
   - title: "General configuration"
     visible: true
     variables:
@@ -89,6 +83,12 @@ variableGroups:
       #- simple_np_flex_shape
       #- gpu_np_size
       #- gpu_np_shape
+  
+  - title: "IAM configuration"
+    visible: true
+    variables:
+      - create_iam_resources
+      - create_iam_tag_namespace
 
   - title: "Access to the Kubernetes cluster"
     visible: true
