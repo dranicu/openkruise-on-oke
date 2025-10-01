@@ -123,7 +123,7 @@ variable "create_cluster" {
 
 variable "create_iam_resources" {
   type    = bool
-  default = false
+  default = true
 }
 
 variable "create_iam_defined_tags" {
