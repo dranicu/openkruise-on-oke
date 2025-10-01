@@ -3,6 +3,8 @@
 
 module "oke" {
   source  = "oracle-terraform-modules/oke/oci"
+  create_iam_operator_policy = "always"
+  create_iam_resources = var.create_iam_resources
 
 allow_rules_workers = {
     "Allow TCP ingress to workers for SSL traffic from anywhere" : {
