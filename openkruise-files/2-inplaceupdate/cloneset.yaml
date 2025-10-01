@@ -1,3 +1,4 @@
+apiVersion: apps.kruise.io/v1alpha1
 kind: CloneSet
 metadata:
   name: sample-cloneset
