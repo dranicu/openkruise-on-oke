@@ -23,8 +23,6 @@ variableGroups:
   - title: "Hidden stack variables"
     visible: false
     variables:
-      - create_iam_resources
-      - create_iam_tag_namespace
       - create_iam_defined_tags
       - use_defined_tags
       - tag_namespace
