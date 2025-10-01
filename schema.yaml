@@ -256,7 +256,7 @@ variables:
     description: Public SSH key to be included in the ~/.ssh/authorized_keys file for the bastion, operator and worker nodes.
     # renders variable as an SSH key control
     type: oci:core:ssh:publickey
-    required: false
+    required: true
 
   simple_np_flex_shape:
     title: Generic Nodepool shape
